@@ -5,7 +5,7 @@
                 <h1>Directives Exercise</h1>
                 <!-- Exercise -->
                 <!-- Build a Custom Directive which works like v-on (Listen for Events) -->
-            <div v-myOn:click="clickFunc">Click Count : {{clickCount}}</div>
+            <div v-myOn:click="clickFunc"> CustomDirective for All Events --> Click Count : {{clickCount}}</div>
             </div>
         </div>
     </div>
