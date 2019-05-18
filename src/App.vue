@@ -9,6 +9,7 @@
       <router-link to="/quotes">Qoutes</router-link>  |
       <router-link to="/forms">Forms</router-link>  |
     </div>
+    <p>Test</p>
     <router-view/>
   </div>
 </template>
