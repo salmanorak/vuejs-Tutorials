@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import MonsterGame from '@/views/MonsterGame.vue'
+import Servers from '@/views/Servers.vue'
+import DynamicComp from '@/views/DynamicComp.vue'
+import Slots from '@/views/Slots.vue'
+import Quotes from '@/views/Qoutes.vue'
+import Forms from '@/views/Forms.vue'
 
 Vue.use(Router)
 
@@ -9,17 +14,34 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: '/monstergame',
+      name: 'monstergame',
+      component: MonsterGame
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/servers',
+      name: 'servers',
+      component: Servers
+    },
+    {
+      path: '/dynamicComp',
+      name: 'DynamicComp',
+      component: DynamicComp
+    },
+    {
+      path: '/slots',
+      name: 'Slots',
+      component: Slots
+    },
+    {
+      path: '/quotes',
+      name: 'quotes',
+      component: Quotes
+    },
+    {
+      path: '/forms',
+      name: 'forms',
+      component: Forms
     }
   ]
 })
