@@ -42,7 +42,7 @@
 
 <style scoped>
 button{
-    min-width:40%;
+    min-width:50%;
     margin:10px auto;
     display: block;
 }
