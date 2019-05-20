@@ -6,6 +6,7 @@ import DynamicComp from "@/views/DynamicComp.vue";
 import Slots from "@/views/Slots.vue";
 import Quotes from "@/views/Qoutes.vue";
 import Forms from "@/views/Forms.vue";
+import CustomDirectives from '@/views/CustomDirectives.vue'
 import Home from "@/views/Home.vue";
 
 Vue.use(Router);
@@ -44,10 +45,13 @@ export default new Router({
       name: "forms",
       component: Forms
     },
-    {
-      path: "/",
-      name: "forms",
+    { path: "/",
+      name: "Home",
       component: Home
+    },{
+      path: '/customdirectives',
+      name: 'CustomDirectives',
+      component: CustomDirectives
     }
   ]
 });
