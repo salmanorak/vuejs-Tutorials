@@ -7,6 +7,8 @@ Vue.config.productionTip = false;
 
 export const EventBus = new Vue();
 
+Vue.filter('addCountLength', function (value) { return value + ' ( ' + value.length + ' )'; })
+
 new Vue({
   router,
   store,

@@ -8,6 +8,7 @@ import Quotes from '@/views/Qoutes.vue'
 import Forms from '@/views/Forms.vue'
 import CustomDirectives from '@/views/CustomDirectives.vue'
 import Home from '@/views/Home.vue'
+import FilterAndMixin from '@/views/FilterAndMixin.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/customdirectives',
       name: 'CustomDirectives',
       component: CustomDirectives
+    },
+    {
+      path: '/filterandmixin',
+      name: 'FilterAndMixin',
+      component: FilterAndMixin
     }
   ]
 })
