@@ -5,7 +5,9 @@
                 <h1>Directives Exercise</h1>
                 <!-- Exercise -->
                 <!-- Build a Custom Directive which works like v-on (Listen for Events) -->
-            <div v-myOn:click="clickFunc"> CustomDirective for All Events --> Click Count : {{clickCount}}</div>
+                <div v-myOn:click="clickFunc"> CustomDirective for All Events --> Click Count : {{clickCount}}</div>
+                <hr/>
+                <div v-myOn:mouseenter="mouseFnc"> CustomDirective for All Events --> mouseEnter Count : {{mouseenterCount}}</div>
             </div>
         </div>
     </div>
@@ -15,12 +17,16 @@
     export default {
     data(){
         return{
-          clickCount:0  
+          clickCount:0  ,
+          mouseenterCount:0
         }
     },
     methods:{
         clickFunc(){
             this.clickCount++
+        },
+        mouseFnc(){
+            this.mouseenterCount++
         }
     },
     directives:{
