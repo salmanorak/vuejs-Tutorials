@@ -8,6 +8,8 @@
       <router-link to="/dynamicComp">dynamicComp</router-link>  |
       <router-link to="/quotes">Qoutes</router-link>  |
       <router-link to="/forms">Forms</router-link>  |
+      <router-link to="/customdirectives">Custom Directives</router-link>  |
+      <router-link to="/filterandmixin">Filter And Mixin</router-link>  |
     </div>
     <router-view/>
   </div>
