@@ -10,6 +10,7 @@ import Forms from '@/views/Forms.vue'
 import CustomDirectives from '@/views/CustomDirectives.vue'
 import Home from '@/views/Home.vue'
 import FilterAndMixin from '@/views/FilterAndMixin.vue'
+import SaveUserInfo from '@/views/SaveUserInfo'
 
 Vue.use(Router);
 
@@ -61,6 +62,11 @@ export default new Router({
       path: '/filterandmixin',
       name: 'FilterAndMixin',
       component: FilterAndMixin
+    },
+    {
+      path: '/saveuserinfo',
+      name: 'SaveUserInfo',
+      component: SaveUserInfo
     }
   ]
 });

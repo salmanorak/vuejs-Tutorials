@@ -10,6 +10,7 @@
       <router-link to="/forms">Forms</router-link>  |
       <router-link to="/customdirectives">Custom Directives</router-link>  |
       <router-link to="/filterandmixin">Filter And Mixin</router-link>  |
+      <router-link to="/saveuserinfo">Vue Resources Save User Info</router-link>  |
     </div>
     <router-view/>
   </div>
