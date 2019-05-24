@@ -12,7 +12,7 @@ export const EventBus = new Vue()
 
 Vue.filter('addCountLength', function (value) { return value + ' ( ' + value.length + ' )' })
 
-Vue.use(resource);
+Vue.use(resource)
 
 new Vue({
   router,
